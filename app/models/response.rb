@@ -11,7 +11,7 @@
 #
 
 class Response < ActiveRecord::Base
-  validates :user_name, :question_id, :answer_choice_id, presence: true
+  validates :user_id, :question_id, :answer_choice_id, presence: true
 
   belongs_to :respondent,
     primary_key: :id,
